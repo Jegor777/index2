@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Моя Україна</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fdf6ee;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 150px 300px 150px;
+            grid-template-rows: 100px 200px 100px;
+            gap: 2px;
+            text-align: center;
+        }
+        .block {
+            border: 1px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+        .center {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            flex-direction: column;
+            font-size: 28px;
+        }
+        .center span:first-child {
+            color: #0057b7;
+        }
+        .center span:last-child {
+            color: #ffd700;
+        }
+        .link {
+            text-decoration: none;
+            color: black;
+        }
+        .vertical {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="symvoly.html" class="block link">Державні<br>символи</a>
+        <a href="geroi.html" class="block link">Герої не вмирають</a>
+        <a href="mystetstvo.html" class="block link vertical">Мистецтво</a>
+        <a href="istoryia.html" class="block link vertical">Історія<br>незалежності</a>
+        <div class="block center">
+            <span>Моя</span>
+            <span>Україна</span>
+        </div>
+        <a href="maliovnycha.html" class="block link">Мальовнича Україна</a>
+    </div>
+</body>
+</html>
